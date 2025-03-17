@@ -11,13 +11,13 @@ const cUserSlice = createSlice({
     reducers: {
         // Reducer for logging in a user. It sets the currentUser from the payload
         loginUser: (state, { payload }) => {
-            // consolee.log(state); // Logs the current state before the change
-            // consolee.log(payload.currentUser); // Logs the user data that will be set to currentUser
+            console.log(state); // Logs the current state before the change
+            console.log(payload.currentUser); // Logs the user data that will be set to currentUser
             state.currentUser = payload.currentUser; // Update the currentUser state with the user data from payload
         },
         // Reducer for logging out a user. It clears the currentUser object
         logoutUser: (state) => {
-            // consolee.log(state); // Logs the current state before the change
+            console.log(state); // Logs the current state before the change
             state.currentUser = {}; // Reset the currentUser state to an empty object
         }
     }
